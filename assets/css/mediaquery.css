@@ -1,0 +1,224 @@
+/*start media query of main at Home section*/
+@media screen and (max-width: 600px) {
+    .main-inner{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+
+    }
+    .main-caption{
+        text-align: center;
+    }
+    .main-img img{
+        width: 100%;
+    }
+  }
+  @media screen and (min-width:601px) and (max-width:768px){
+    .main-inner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+  
+      }
+      .main-caption{
+          text-align: center;
+      }
+      .main-img img{
+        width: 100%;
+    }
+} 
+@media screen and (min-width:769px) and (max-width:992px){
+    .main-inner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+  
+      }
+      .main-caption{
+          text-align: center;
+      }
+       .main-img img{
+        width: 100%;
+    }
+}
+/*End media query of main at Home section*/
+
+/*Start media query of Professional section*/
+@media screen and (max-width: 600px) {
+    .image-items{
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width:601px) and (max-width:768px){
+    .image-items{
+        flex-direction: column;
+        width: 100%;
+      }
+} 
+@media screen and (min-width:769px) and (max-width:992px){
+    .image-items{
+        width: calc(calc(100% - var(--gap) * 2) / 2);
+  
+      }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    .image-items{
+        width: calc(calc(100% - var(--gap) * 2) / 3);
+      }
+}
+/*End media query of Professional  section*/
+
+/*start media query of gallery  section*/
+@media screen and (max-width: 1400px) {
+    .gallery-photos {
+      height: 1000px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .gallery-photos {
+      height: 845px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .gallery-photos {
+      height: 1405px;
+    }
+  
+    .gallery-photos picture {
+      width: calc(calc(100% - var(--gap)) / 2);
+    }
+  
+    .gallery .pizza {
+      order: 1;
+    }
+    .gallery .fried {
+      order: 6;
+    }
+    .gallery .omelette {
+      order: 4;
+    }
+    .gallery .kofta {
+      order: 7;
+    }
+    .gallery .burger {
+      order: 2;
+    }
+    .gallery .pizza-slices {
+      order: 3;
+    }
+    .gallery .steak {
+      order: 5;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery-photos {
+      height: auto;
+    }
+    .gallery-photos picture {
+      width: 100%;
+    }
+  }
+/*End media query of gallery  section*/
+
+/*Start media query of contact  section*/
+@media screen and (max-width: 992px) {
+  .contact .inputs input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-info > div {
+    width: 100%;
+  }
+}
+/*End media query of contact  section*/
+
+/*Start media query of footer  section*/
+@media screen and (max-width: 1200px) {
+  footer .container :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap)) / 2);
+    order: 1;
+  }
+
+  footer .container :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container :is(.about, .contact-details, .subscription) {
+    width: 100%;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .sunscription-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/*End media query of contact  section*/
+@media screen and (min-width:769px) and (max-width:992px){
+  .header-inner,nav{
+
+      width: 100%;
+
+    }
+    .main-caption{
+        text-align: center;
+    }
+     .main-img img{
+      width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav .nav-links {
+    --inline-gap: 0px;
+    --block-gap: 15px;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #f1f1f1;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transition: transform 400ms;
+  }
+
+  nav .nav-links .close-icon {
+    display: block;
+    padding: 10px 15px 5px;
+  }
+
+  nav .nav-links a:not(.active):hover::before {
+    width: 0px;
+  }
+
+  nav .nav-links a {
+    width: 100%;
+    padding: var(--block-gap) 10px;
+  }
+
+  nav .nav-links a::before {
+    bottom: 2px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .mode-group {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
